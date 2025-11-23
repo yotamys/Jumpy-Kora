@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: linear-gradient(to bottom, #87CEEB, #E0F7FA); /* Sky gradient */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#gameCanvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ui-layer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    pointer-events: none; /* Let clicks pass through to canvas if needed */
+}
+
+#score-board {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: inline-block;
+}
+
+#controls-hint {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
